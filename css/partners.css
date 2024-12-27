@@ -1,0 +1,116 @@
+.partners-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.partners-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.partners-header h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0;
+    font-family: 'Oswald';
+    color: var(--text-primary);
+}
+
+.partners-header p {
+    color: var(--text-additional);
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.partners-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.partner-card {
+    background: var(--card-bg);
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 2px 10px var(--card-shadow);
+    transition: transform 0.3s ease;
+}
+
+.partner-card:hover {
+    transform: translateY(-10px);
+}
+
+.partner-logo {
+    width: 200px;
+    height: 100px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.partner-logo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.partner-name {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--text-primary);
+    font-family: 'Oswald';
+}
+
+.partner-description {
+    color: var(--text-additional);
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.partner-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background: var(--bg-additional);
+    color: var(--text-primary);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.partner-link:hover {
+    background: var(--text-primary);
+    color: var(--bg-primary);
+}
+
+.partner-tier {
+    margin-bottom: 60px;
+}
+
+.tier-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.tier-header h2 {
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--text-primary);
+    font-family: 'Oswald';
+}
+
+@media (max-width: 768px) {
+    .partners-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .partner-card {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}

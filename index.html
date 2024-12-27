@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Strona</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/index.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <link rel="icon" href="img/logo.png">
+        <script src="js/script.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <div class="image-container">
+                <img src="img/logo-sts.png" class="theme-aware-image">
+            </div>
+            <nav class="pc">
+                <li><a href="#about">CZYM JEST STS?</a></li>
+                <li><a href="schedule.html">HARMONOGRAM</a></li>
+                <li><a href="#">REJESTRACJA</a></li>
+                <li><a href="partners.html">PARTNERZY</a></li>
+                <li><a href="#">GALERIA</a></li>
+                <li><a href="#contact">KONTAKT</a></li>
+            </nav>
+
+            <nav class="phone">
+                <i class="fa-solid fa-bars" id="menu-toggle"></i>
+                <div class="mobile-menu">
+                    <div class="mobile-menu-header">
+                        <i class="fa-solid fa-xmark" id="menu-close"></i>
+                    </div>
+                    <ul class="mobile-nav-links">
+                        <li><a href="#about">CZYM JEST STS?</a></li>
+                        <li><a href="schedule.html">HARMONOGRAM</a></li>
+                        <li><a href="#">REJESTRACJA</a></li>
+                        <li><a href="partners.html">PARTNERZY</a></li>
+                        <li><a href="#">GALERIA</a></li>
+                        <li><a href="#contact">KONTAKT</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <article class="big-image bg-secondary">
+                <img src="http://sts.samorzad.uj.edu.pl/wp-content/uploads/2024/04/inbound4915691105164443502-1536x668.jpg" class="fade-in">
+            </article>
+            <article class="video bg-primary" id="about">
+                <div class="video-desc fade-in-left">
+                    <h1>Czym jest STS?</h1>
+                    <span>Studencki Tydzień Sztuki to już jedynasta edycja projektu organizowanego corocznie przez Samorząd Studentów UJ. Celem wydarzenia jest zachęcenie studentów i studentek Uniwersytetu Jagiellońskiego do aktywnego udziału w wydarzeniach kulturalnych, w tym poznania dziedzictwa kulturalnego Krakowa oraz świadomego udziału w dyskusji o współczesnej sztuce. Dlatego też zachęcamy młodych do udziału w organizowanych przez nas warsztatach, panelach dyskusyjnych, spektaklach teatralnych oraz seansach filmowych, które udostępniamy w pełni bezpłatnie.</span>
+                </div>
+                <div class="video-overlay fade-in-right">
+                    <iframe src="https://www.youtube.com/embed/qsJQGMWtEDI?si=yOhTywE7gpHp8vqc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="width:560px; height:315px;"></iframe>
+                </div>
+            </article>
+            <article class="text bg-secondary" id="partners">
+                <h1 class="fade-in">Partnerzy 2025</h1>
+                <span class="fade-in">
+                    Podczas tegorocznej XI edycji Studenckiego Tygodnia Sztuki zapraszamy Was do poznania wielu interesujących miejsc na mapie Krakowa. Specjalnie dla Was udostępniamy Wam przez całe dwa tygodnie (od 12 kwietnia do 26 kwietnia) wstęp do licznych instytucji kultury bezpłatnie lub za symboliczną kwotę po wyczerpaniu się dostępnej puli biletów!
+                </span>
+            </article>
+            <article class="big-image bg-primary" style="padding: 40px 0 0 0;">
+                <img src="img/herb-uj.png" class="fade-in">
+            </article>
+            <article class="big-image bg-primary" style="padding: 10px 0 40px 0;">
+                <img src="img/partners.png" class="fade-in">
+            </article>
+            <article class="contact bg-additional" id="contact">
+                <h1 class="fade-in">Kontakt</h1>
+                <div class="contact-container">
+                    <ul class="contact-list">
+                        <li class="fade-in-left">
+                            <a href="tel:12 663 11 71">
+                                <i class="fa-solid fa-phone"></i>
+                                <div class="contact-info">
+                                    <h2>TELEFON</h2>
+                                    <span>12 663 11 71 | 12 663 11 72</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="fade-in-left">
+                            <a href="mailto:projekty@samorzad.uj.edu.pl">
+                                <i class="fa-solid fa-envelope"></i>
+                                <div class="contact-info">
+                                    <h2>EMAIL</h2>
+                                    <span>projekty@samorzad.uj.edu.pl</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="social-media">
+                    <a href="https://www.facebook.com/samorzad.uj" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/studenciuj/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </article>
+        </main>
+
+        <footer>Copyright 2024 Studencki Tydzień Sztuki</footer>
+    </body>
+</html>

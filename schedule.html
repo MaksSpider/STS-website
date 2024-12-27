@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Strona</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/schedule.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <link rel="icon" href="img/logo.png">
+        <script src="js/script.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <div class="image-container">
+                <img src="img/logo-sts.png" class="theme-aware-image">
+            </div>
+            <nav class="pc">
+                <li><a href="index.html">CZYM JEST STS?</a></li>
+                <li><a href="schedule.html">HARMONOGRAM</a></li>
+                <li><a href="#">REJESTRACJA</a></li>
+                <li><a href="partners.html">PARTNERZY</a></li>
+                <li><a href="#">GALERIA</a></li>
+                <li><a href="#contact">KONTAKT</a></li>
+            </nav>
+
+            <nav class="phone">
+                <i class="fa-solid fa-bars" id="menu-toggle"></i>
+                <div class="mobile-menu">
+                    <div class="mobile-menu-header">
+                        <i class="fa-solid fa-xmark" id="menu-close"></i>
+                    </div>
+                    <ul class="mobile-nav-links">
+                        <li><a href="index.html">CZYM JEST STS?</a></li>
+                        <li><a href="schedule.html">HARMONOGRAM</a></li>
+                        <li><a href="#">REJESTRACJA</a></li>
+                        <li><a href="partners.html">PARTNERZY</a></li>
+                        <li><a href="#">GALERIA</a></li>
+                        <li><a href="#contact">KONTAKT</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <div class="schedule-container">
+                <div class="schedule-header">
+                    <h1>Program Wydarzenia</h1>
+                    <div class="week-toggles">
+                        <button class="week-toggle active" onclick="showWeek('week1')">Tydzień 1</button>
+                        <button class="week-toggle" onclick="showWeek('week2')">Tydzień 2</button>
+                    </div>
+                </div>
+
+                <!-- Week 1 -->
+                <div id="week1" class="schedule-week active fade-in">
+                    <h2 class="week-header">Tydzień 1 (15-21 Stycznia)</h2>
+
+                    <div class="schedule-day">
+                        <h3 class="day-header">Poniedziałek, 15 Stycznia</h3>
+                        <div class="event">
+                            <div class="event-time">10:00 - 12:00</div>
+                            <div class="event-details">
+                                <div class="event-title">Ceremonia Otwarcia</div>
+                                <div class="event-description">Uroczyste rozpoczęcie Studenckiego Tygodnia Sztuki</div>
+                                <div class="event-location">Aula Główna</div>
+                            </div>
+                        </div>
+                        <div class="event">
+                            <div class="event-time">14:00 - 16:00</div>
+                            <div class="event-details">
+                                <div class="event-title">Wystawa Fotografii</div>
+                                <div class="event-description">Prezentacja prac studentów kierunków artystycznych</div>
+                                <div class="event-location">Galeria Sztuki</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="schedule-day">
+                        <h3 class="day-header">Wtorek, 16 Stycznia</h3>
+                        <div class="event">
+                            <div class="event-time">11:00 - 13:00</div>
+                            <div class="event-details">
+                                <div class="event-title">Warsztaty Malarskie</div>
+                                <div class="event-description">Warsztaty malarstwa olejnego dla początkujących</div>
+                                <div class="event-location">Sala Warsztatowa 1</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="schedule-day">
+                        <h3 class="day-header">Środa, 17 Stycznia</h3>
+                        <div class="event">
+                            <div class="event-time">16:00 - 18:00</div>
+                            <div class="event-details">
+                                <div class="event-title">Koncert Muzyki Klasycznej</div>
+                                <div class="event-description">Występ orkiestry studenckiej</div>
+                                <div class="event-location">Sala Koncertowa</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="schedule-day">
+                        <h3 class="day-header">Czwartek, 18 Stycznia</h3>
+                        <div class="event">
+                            <div class="event-time">12:00 - 14:00</div>
+                            <div class="event-details">
+                                <div class="event-title">Panel Dyskusyjny</div>
+                                <div class="event-description">Sztuka w czasach cyfrowych - wyzwania i możliwości</div>
+                                <div class="event-location">Sala Konferencyjna</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="schedule-day">
+                        <h3 class="day-header">Piątek, 19 Stycznia</h3>
+                        <div class="event">
+                            <div class="event-time">17:00 - 19:00</div>
+                            <div class="event-details">
+                                <div class="event-title">Pokaz Filmów Studenckich</div>
+                                <div class="event-description">Prezentacja krótkometrażowych filmów</div>
+                                <div class="event-location">Aula Kinowa</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Week 2 -->
+                <div id="week2" class="schedule-week fade-in">
+                    <h2 class="week-header">Tydzień 2 (22-28 Stycznia)</h2>
+
+                    <div class="schedule-day">
+                        <h3 class="day-header">Poniedziałek, 22 Stycznia</h3>
+                        <div class="event">
+                            <div class="event-time">13:00 - 15:00</div>
+                            <div class="event-details">
+                                <div class="event-title">Warsztaty Rzeźbiarskie</div>
+                                <div class="event-description">Podstawy rzeźby w glinie</div>
+                                <div class="event-location">Pracownia Rzeźby</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="schedule-day">
+                        <h3 class="day-header">Wtorek, 23 Stycznia</h3>
+                        <div class="event">
+                            <div class="event-time">15:00 - 17:00</div>
+                            <div class="event-details">
+                                <div class="event-title">Wystawa Multimedialna</div>
+                                <div class="event-description">Interaktywne instalacje artystyczne</div>
+                                <div class="event-location">Przestrzeń Multimedialna</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="schedule-day">
+                        <h3 class="day-header">Środa, 24 Stycznia</h3>
+                        <div class="event">
+                            <div class="event-time">14:00 - 16:00</div>
+                            <div class="event-details">
+                                <div class="event-title">Warsztaty Grafiki</div>
+                                <div class="event-description">Wprowadzenie do grafiki wektorowej</div>
+                                <div class="event-location">Laboratorium Komputerowe</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="schedule-day">
+                        <h3 class="day-header">Czwartek, 25 Stycznia</h3>
+                        <div class="event">
+                            <div class="event-time">18:00 - 20:00</div>
+                            <div class="event-details">
+                                <div class="event-title">Wieczór Poezji</div>
+                                <div class="event-description">Spotkanie z młodymi poetami</div>
+                                <div class="event-location">Kawiarnia Artystyczna</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="schedule-day">
+                        <h3 class="day-header">Piątek, 26 Stycznia</h3>
+                        <div class="event">
+                            <div class="event-time">16:00 - 18:00</div>
+                            <div class="event-details">
+                                <div class="event-title">Ceremonia Zamknięcia</div>
+                                <div class="event-description">Uroczyste zakończenie i wystawa prac powstałych podczas wydarzenia</div>
+                                <div class="event-location">Aula Główna</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>Copyright 2024 Studencki Tydzień Sztuki</footer>
+        <script>
+            function showWeek(weekId) {
+                // Hide all weeks
+                document.querySelectorAll('.schedule-week').forEach(week => {
+                    week.classList.remove('active');
+                });
+                // Show selected week
+                document.getElementById(weekId).classList.add('active');
+
+                // Update button states
+                document.querySelectorAll('.week-toggle').forEach(button => {
+                    button.classList.remove('active');
+                });
+                event.target.classList.add('active');
+            }
+        </script>
+    </body>
+</html>
