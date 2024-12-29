@@ -33,17 +33,8 @@ article {
     display: block;
 }
 
-.theme-aware-image {
-    filter: none;
-    transition: filter 0.3s ease;
-}
-
-[data-theme="dark"] .theme-aware-image {
-    filter: brightness(0) invert(1);
-}
-
 .video {
-    padding: 40px 20px;
+    padding: 40px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -91,7 +82,7 @@ article {
 .text {
     flex-direction: column;
     text-align: center;
-    padding: 40px 20px;
+    padding: 40px 0;
 }
 
 .text > h1 {
@@ -110,7 +101,7 @@ article {
 
 .contact {
     flex-direction: column;
-    padding: 40px 20px;
+    padding: 40px 0;
 }
 
 .contact h1 {

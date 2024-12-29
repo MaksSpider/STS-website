@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
         <link rel="icon" href="img/logo.png">
         <script src="js/script.js" defer></script>
+        <script src="js/theme.js" defer></script>
     </head>
     <body>
         <header>
@@ -20,8 +21,11 @@
                 <li><a href="schedule.html">HARMONOGRAM</a></li>
                 <li><a href="#">REJESTRACJA</a></li>
                 <li><a href="partners.html">PARTNERZY</a></li>
-                <li><a href="#">GALERIA</a></li>
+                <li><a href="gallery.html">GALERIA</a></li>
                 <li><a href="#contact">KONTAKT</a></li>
+                <button class="theme-toggle" onclick="toggleTheme()">
+                    <i class="fas fa-moon"></i>
+                </button>
             </nav>
 
             <nav class="phone">
@@ -35,7 +39,7 @@
                         <li><a href="schedule.html">HARMONOGRAM</a></li>
                         <li><a href="#">REJESTRACJA</a></li>
                         <li><a href="partners.html">PARTNERZY</a></li>
-                        <li><a href="#">GALERIA</a></li>
+                        <li><a href="gallery.html">GALERIA</a></li>
                         <li><a href="#contact">KONTAKT</a></li>
                     </ul>
                 </div>
@@ -57,7 +61,7 @@
                     <div class="partners-grid">
                         <div class="partner-card">
                             <div class="partner-logo">
-                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOYE0hRldIjmixNheRpP0HYuLyVn--WP_A3w&s" alt="Logo UJ" class="theme-aware-image">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOYE0hRldIjmixNheRpP0HYuLyVn--WP_A3w&s" alt="Logo UJ">
                             </div>
                             <h3 class="partner-name">Uniwersytet Jagielloński</h3>
                             <p class="partner-description">Główny partner wydarzenia, wspierający organizację i udostępniający przestrzeń.</p>
@@ -65,7 +69,7 @@
                         </div>
                         <div class="partner-card">
                             <div class="partner-logo">
-                                <img src="https://www.krakow.pl/zalacznik/277099/9" alt="Logo Miasta" class="theme-aware-image">
+                                <img src="https://www.krakow.pl/zalacznik/277099/9" alt="Logo Miasta">
                             </div>
                             <h3 class="partner-name">Miasto Kraków</h3>
                             <p class="partner-description">Partner strategiczny wspierający promocję i organizację wydarzenia.</p>
@@ -82,7 +86,7 @@
                     <div class="partners-grid">
                         <div class="partner-card">
                             <div class="partner-logo">
-                                <img src="https://karnet.krakowculture.pl/storage/app/uploads/public/622/754/6d4/6227546d4ac54172068783.png" alt="Logo KBF" class="theme-aware-image">
+                                <img src="https://karnet.krakowculture.pl/storage/app/uploads/public/622/754/6d4/6227546d4ac54172068783.png" alt="Logo KBF">
                             </div>
                             <h3 class="partner-name">Krakowskie Biuro Festiwalowe</h3>
                             <p class="partner-description">Wsparcie w organizacji wydarzeń kulturalnych i artystycznych.</p>
@@ -90,7 +94,7 @@
                         </div>
                         <div class="partner-card">
                             <div class="partner-logo">
-                                <img src="https://mnk.pl/images/upload/logo-main.png" alt="Logo Muzeum" class="theme-aware-image">
+                                <img src="https://mnk.pl/images/upload/logo-main.png" alt="Logo Muzeum">
                             </div>
                             <h3 class="partner-name">Muzeum Narodowe w Krakowie</h3>
                             <p class="partner-description">Partner wspierający organizację wystaw i warsztatów artystycznych.</p>
@@ -98,7 +102,7 @@
                         </div>
                         <div class="partner-card">
                             <div class="partner-logo">
-                                <img src="https://cricoteka.pl/wp-content/uploads/2021/12/cricoteka_logo.png" alt="Logo Cricoteki" class="theme-aware-image">
+                                <img src="https://cricoteka.pl/wp-content/uploads/2021/12/cricoteka_logo.png" alt="Logo Cricoteki">
                             </div>
                             <h3 class="partner-name">Cricoteka</h3>
                             <p class="partner-description">Wsparcie merytoryczne i organizacyjne wydarzeń teatralnych.</p>
@@ -115,7 +119,7 @@
                     <div class="partners-grid">
                         <div class="partner-card">
                             <div class="partner-logo">
-                                <img src="https://www.manggha.pl/images/logo.png" alt="Logo Manggha" class="theme-aware-image">
+                                <img src="https://www.manggha.pl/images/logo.png" alt="Logo Manggha">
                             </div>
                             <h3 class="partner-name">Muzeum Sztuki i Techniki Japońskiej Manggha</h3>
                             <p class="partner-description">Przestrzeń dla wydarzeń artystycznych i wystaw.</p>
@@ -123,7 +127,7 @@
                         </div>
                         <div class="partner-card">
                             <div class="partner-logo">
-                                <img src="https://www.mocak.pl/images/logo.svg" alt="Logo MOCAK" class="theme-aware-image">
+                                <img src="https://www.mocak.pl/images/logo.svg" alt="Logo MOCAK">
                             </div>
                             <h3 class="partner-name">MOCAK</h3>
                             <p class="partner-description">Muzeum Sztuki Współczesnej wspierające młodych artystów.</p>

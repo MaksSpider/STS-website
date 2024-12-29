@@ -9,19 +9,23 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
         <link rel="icon" href="img/logo.png">
         <script src="js/script.js" defer></script>
+        <script src="js/theme.js" defer></script>
     </head>
     <body>
         <header>
-            <div class="image-container">
+            <a class="image-container" href="index.html">
                 <img src="img/logo-sts.png" class="theme-aware-image">
-            </div>
+            </a>
             <nav class="pc">
                 <li><a href="#about">CZYM JEST STS?</a></li>
                 <li><a href="schedule.html">HARMONOGRAM</a></li>
                 <li><a href="#">REJESTRACJA</a></li>
                 <li><a href="partners.html">PARTNERZY</a></li>
-                <li><a href="#">GALERIA</a></li>
+                <li><a href="gallery.html">GALERIA</a></li>
                 <li><a href="#contact">KONTAKT</a></li>
+                <button class="theme-toggle" onclick="toggleTheme()">
+                    <i class="fas fa-moon"></i>
+                </button>
             </nav>
 
             <nav class="phone">
@@ -35,7 +39,7 @@
                         <li><a href="schedule.html">HARMONOGRAM</a></li>
                         <li><a href="#">REJESTRACJA</a></li>
                         <li><a href="partners.html">PARTNERZY</a></li>
-                        <li><a href="#">GALERIA</a></li>
+                        <li><a href="gallery.html">GALERIA</a></li>
                         <li><a href="#contact">KONTAKT</a></li>
                     </ul>
                 </div>
