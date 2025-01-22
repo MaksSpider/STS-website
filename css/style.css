@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap');
 
+
+/* Trzeba to uporządkować */
 :root {
 	/* Light mode variables */
 	--background-color: #ffffff;
@@ -30,7 +32,7 @@
 	--border-color: #444444;
 	--card-background: #2d2d2d;
 	--shadow-color: rgba(0, 0, 0, 0.3);
-	--bg-primary: #222831;
+	--bg-primary: #1a1a1a;
 	--bg-secondary: #001f3f9c;
 	--bg-additional: #393E46;
 	--text-primary: #ffffff;
@@ -44,11 +46,11 @@
 
 /* Theme toggle button */
 .theme-toggle {
-	background: none;
+	background: var(--text-color);
+	border-radius: 50%;
 	height: 40px;
 	width: 40px;
 	border: none;
-	color: var(--text-color);
 	font-size: 24px;
 	cursor: pointer;
 	padding: 0 20px;
@@ -57,6 +59,10 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
 }
 
 .theme-toggle:hover {
@@ -64,7 +70,7 @@
 }
 
 .theme-toggle i {
-	color: var(--text-color);
+	color: var(--background-color);
 }
 
 * {

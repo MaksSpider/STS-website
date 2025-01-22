@@ -6,9 +6,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/index.css" />
+        <link rel="stylesheet" href="css/gallery.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
         <link rel="icon" href="img/logo.png">
         <script src="js/script.js" defer></script>
+        <script src="js/gallery.js" defer></script>
         <script src="js/theme.js" defer></script>
     </head>
     <body>
@@ -19,9 +21,9 @@
             <nav class="pc">
                 <li><a href="#about">CZYM JEST STS?</a></li>
                 <li><a href="schedule.html">HARMONOGRAM</a></li>
-                <li><a href="#">REJESTRACJA </a></li>
+                <li><a href="schedule.html">REJESTRACJA </a></li>
                 <li><a href="partners.html">PARTNERZY</a></li>
-                <li><a href="gallery.html">GALERIA</a></li>
+                <li><a href="#gallery">GALERIA</a></li>
                 <li><a href="#contact">KONTAKT</a></li>
                 <button class="theme-toggle" onclick="toggleTheme()">
                     <i class="fas fa-moon"></i>
@@ -37,9 +39,9 @@
                     <ul class="mobile-nav-links">
                         <li><a href="#about">CZYM JEST STS?</a></li>
                         <li><a href="schedule.html">HARMONOGRAM</a></li>
-                        <li><a href="#">REJESTRACJA</a></li>
+                        <li><a href="schedule.html">REJESTRACJA</a></li>
                         <li><a href="partners.html">PARTNERZY</a></li>
-                        <li><a href="gallery.html">GALERIA</a></li>
+                        <li><a href="#gallery">GALERIA</a></li>
                         <li><a href="#contact">KONTAKT</a></li>
                     </ul>
                 </div>
@@ -59,6 +61,75 @@
                     <iframe src="https://www.youtube.com/embed/qsJQGMWtEDI?si=yOhTywE7gpHp8vqc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="width:560px; height:315px;"></iframe>
                 </div>
             </article>
+            <article class="text bg-secondary" id="gallery">
+                <h1 class="fade-in">Galeria</h1>
+                <span class="fade-in">
+                    Zobacz najlepsze momenty z poprzednich edycji Studenckiego Tygodnia Sztuki.
+                </span>
+            </article>
+            <div class="gallery-container">
+                <div class="slideshow-container fade-in">
+                    <div class="slide fade loading">
+                        <div class="loading-spinner"></div>
+                        <img src="https://images.pexels.com/photos/2372978/pexels-photo-2372978.jpeg" alt="Art Exhibition">
+                        <div class="slide-caption">
+                            <p>Wystawa artystyczna 2023</p>
+                        </div>
+                    </div>
+
+                    <div class="slide fade loading">
+                        <div class="loading-spinner"></div>
+                        <img src="https://images.pexels.com/photos/1266808/pexels-photo-1266808.jpeg" alt="Art Workshop">
+                        <div class="slide-caption">
+                            <p>Warsztaty malarskie</p>
+                        </div>
+                    </div>
+
+                    <div class="slide fade loading">
+                        <div class="loading-spinner"></div>
+                        <img src="https://images.pexels.com/photos/2747446/pexels-photo-2747446.jpeg" alt="Music Concert">
+                        <div class="slide-caption">
+                            <p>Koncert muzyczny</p>
+                        </div>
+                    </div>
+
+                    <div class="slide fade loading">
+                        <div class="loading-spinner"></div>
+                        <img src="https://images.pexels.com/photos/2372945/pexels-photo-2372945.jpeg" alt="Theater Show">
+                        <div class="slide-caption">
+                            <p>Pokaz teatralny</p>
+                        </div>
+                    </div>
+
+                    <div class="slide fade loading">
+                        <div class="loading-spinner"></div>
+                        <img src="https://images.pexels.com/photos/1647976/pexels-photo-1647976.jpeg" alt="Photography Exhibition">
+                        <div class="slide-caption">
+                            <p>Wystawa fotografii</p>
+                        </div>
+                    </div>
+
+                    <div class="slide fade loading">
+                        <div class="loading-spinner"></div>
+                        <img src="https://images.pexels.com/photos/354939/pexels-photo-354939.jpeg" alt="Sculpture Workshop">
+                        <div class="slide-caption">
+                            <p>Warsztaty rzeźbiarskie</p>
+                        </div>
+                    </div>
+
+                    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+                </div>
+
+                <div class="dots-container">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                </div>
+            </div>
             <article class="text bg-secondary" id="partners">
                 <h1 class="fade-in">Partnerzy 2025</h1>
                 <span class="fade-in">
