@@ -125,6 +125,32 @@
     margin-top: 5px;
 }
 
+.register {
+    height: 72px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register a {
+    background: var(--text-primary);
+    color: var(--bg-primary);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.register a:hover {
+    transform: scale(1.1);
+}
+
+.register a i {
+    margin-left: 10px;
+}
+
 @media (max-width: 768px) {
     .event {
         flex-direction: column;

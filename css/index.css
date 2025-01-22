@@ -218,10 +218,6 @@ article {
     .contact-list li {
         margin: 0;
     }
-
-    .big-image {
-        padding: 15px;
-    }
 }
 
 @media (max-width: 480px) {
