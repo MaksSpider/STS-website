@@ -3,6 +3,15 @@
 
 /* Trzeba to uporządkować */
 :root {
+	/* NEW */
+	--background-primary: #ffffff;
+	--background-secondary: #f8f9fa;
+	--background-additional: #001f3f;
+
+	--text-primary: #001f3f;
+	--text-secondary: #ffffff;
+	--text-additional: #bebebe;
+
 	/* Light mode variables */
 	--background-color: #ffffff;
 	--text-color: #333333;
