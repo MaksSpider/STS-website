@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Studencki Tydzień Sztuki</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/register.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="icon" href="img/logo.png" />
+    <script src="js/script.js" defer></script>
+    <script src="js/theme.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <a class="image-container" href="index.html">
+        <img src="img/logo-sts.png" class="theme-aware-image" />
+      </a>
+      <nav class="pc">
+        <li><a href="index.html#about">CZYM JEST STS?</a></li>
+        <li><a href="schedule.html">HARMONOGRAM</a></li>
+        <li><a href="schedule.html">REJESTRACJA </a></li>
+        <li><a href="partners.html">PARTNERZY</a></li>
+        <li><a href="index.html#gallery">GALERIA</a></li>
+        <li><a href="index.html#contact">KONTAKT</a></li>
+        <button class="theme-toggle" onclick="toggleTheme()">
+          <i class="fas fa-moon"></i>
+        </button>
+      </nav>
+
+      <nav class="phone">
+        <i class="fa-solid fa-bars" id="menu-toggle"></i>
+        <div class="mobile-menu">
+          <div class="mobile-menu-header">
+            <i class="fa-solid fa-xmark" id="menu-close"></i>
+          </div>
+          <ul class="mobile-nav-links">
+            <li><a href="#about">CZYM JEST STS?</a></li>
+            <li><a href="schedule.html">HARMONOGRAM</a></li>
+            <li><a href="schedule.html">REJESTRACJA</a></li>
+            <li><a href="partners.html">PARTNERZY</a></li>
+            <li><a href="#gallery">GALERIA</a></li>
+            <li><a href="#contact">KONTAKT</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="register-container">
+        <h1>Rejestracja</h1>
+        <form>
+          <input type="text" placeholder="Imię i Nazwisko" required />
+          <input type="text" placeholder="Email" required />
+          <input type="text" placeholder="kolejna opcja" required />
+          <input
+            type="text"
+            placeholder="i jeszcze raz kolejna opcja"
+            required
+          />
+          <input type="text" placeholder="tu coś też może być" required />
+          <button type="submit">Zarejestruj się</button>
+        </form>
+      </div>
+    </main>
+
+    <footer>Copyright 2024 Studencki Tydzień Sztuki</footer>
+  </body>
+</html>
